@@ -1,0 +1,10 @@
+{
+    "name": "Hello-World",
+    "description": "Hello world With Expressj",
+    "authors": "Professor Krasso",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "express": "^4.16.4"
+    }
+}
