@@ -1,0 +1,13 @@
+{
+  "firstName": "Gabriel",
+  "lastName": "Sanchez",
+  "email": "gabo797@gmail.com",
+  "address": "4821 O st",
+  "city": "Omaha",
+  "state": "Nebraska",
+  "zip": "68117",
+  "dependencies": {
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  }
+}
