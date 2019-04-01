@@ -1,0 +1,25 @@
+<% include header %>
+<% include navbar %>
+<br /> 
+
+<h1>Look up</h1>
+
+<br /> 
+
+<div role="main" class="container">
+    <br /> <br />
+
+    <form action="/insert" method="POST">
+        First name: <input name="username" type="text" class="form-control" placeholder="Username" required autofocus><br>
+        Last name: <input name="password" type="text" class="form-control" placeholder="Password" required><br>
+       
+        <input type="submit" value="Sign up" class="btn btn-primary btn-block">
+      </form>
+</div>
+
+<style>
+h1 {
+  text-align: center;
+}
+</style>
+<% include footer%>

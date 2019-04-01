@@ -1,0 +1,9 @@
+{
+    "name": "mongoose-connection",
+    "author": "Proffesor Krasso",
+    "private": true,
+    "dependencies": {
+        "express": "^4.16.4",
+        "mongoose": "^5.4.20"
+    }
+}

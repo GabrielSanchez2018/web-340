@@ -1,0 +1,51 @@
+<% include header %>
+<% include navbar %>
+<br /> <br />
+
+<h2>Welcome to The Employee<%= message %></h2>
+<div role="main" class="container">
+      
+<table>
+    <tr>
+        <th class="blue">FirstName</th>
+        <th class="blue">Last Name</th>
+        <th class="blue">Position</th>
+    </tr>
+    <tr>
+        <th>Gabriel</th>
+        <th>Sanchez</th>
+        <th>Web Developer</th>
+    </tr>
+    <tr>
+        <th>Jessica</th>
+        <th>Sanchez</th>
+        <th>Bussiness Adminin</th>
+    </tr>
+    <tr>
+        <th>Jose</th>
+        <th>Sanchez</th>
+        <th>Robotics</th>
+    </tr>
+</table>
+</div>
+
+<% include footer%>
+<style>
+table, td, th {
+    border: 1px solid green;
+    text-align: center;
+}
+.blue {
+    background-color: lightblue;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th {
+    height: 40px;
+}
+h2{
+    text-align: center;
+}
+</style>

@@ -63,8 +63,8 @@ app.get("/products", function(request, response) {
 
 });
 
-http.createServer(app).listen(8070, function() {
+http.createServer(app).listen(8010, function() {
 
-   console.log("Application started on port 8070.");
+   console.log("Application started on port 8010.");
 
 });
