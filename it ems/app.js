@@ -11,6 +11,8 @@ var express=require("express");
 var http = require("http");
 var path = require("path");
 var logger = require("morgan");
+//require the emoployee directory
+var Employee = require("./models/employee")
 
 // add database mongoose
 var mongoose = require("mongoose");
@@ -68,8 +70,13 @@ app.get("/view", function(request, response){
         message: "Data Entry"
     });
 });
+
+// Employee model
+var employee = new Employee({
+    firstName: "Gabriel",
+    lastName: 'Sanchez'
+});
 // Create the server
 http.createServer(app).listen(8085, function(){
     console.log("Application started on port 8085");
 });
-

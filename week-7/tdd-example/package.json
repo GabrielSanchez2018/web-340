@@ -1,0 +1,12 @@
+{
+    "name": "tdd-example",
+    "author": "Gabriel Sanchez",
+    "private": true,
+    "dependencies": {
+        "chai": "^4.2.0",
+        "mocha": "^6.1.2"
+    },
+    "scripts": {
+        "test": "mocha"
+    }
+}
