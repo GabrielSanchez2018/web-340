@@ -1,33 +1,47 @@
 <% include header %>
 <% include navbar %>
 <br /> <br />
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+               
+            </div>
+            <div class="col-10">
+                <% if(employee.length) { %>
+                <h2  class="text-center">Employee List</h2><br />
+                <div class="card" style="margin-top: 0">
+                    <table class="table table‐hover">
+                        <thead class="thead‐dark">
+                            <tr>
+                                <th>Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% employee.forEach(function (entry) { %>
+                            <tr>
+                                <td><%= entry.name %></td>
+                            </tr>
+                        </tbody>
+                        <% }) %>
+                    </table>
+                    <% } else { %>
+                    No entries! <a href="/new">Add one!</a>
+                    <% } %>
+                </div>
 
-<h2>Welcome to The Employee<%= message %></h2>
-<div role="main" class="container">
-      
-<table>
-    <tr>
-        <th class="blue">FirstName</th>
-        <th class="blue">Last Name</th>
-        <th class="blue">Position</th>
-    </tr>
-    <tr>
-        <th>Gabriel</th>
-        <th>Sanchez</th>
-        <th>Web Developer</th>
-    </tr>
-    <tr>
-        <th>Jessica</th>
-        <th>Sanchez</th>
-        <th>Bussiness Adminin</th>
-    </tr>
-    <tr>
-        <th>Jose</th>
-        <th>Sanchez</th>
-        <th>Robotics</th>
-    </tr>
-</table>
-</div>
+                <div style="text-align: center;margin-top:10px">
+                    <a href="/new"><button class="btn btn-outline-primary">Add New</button></a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <% include scripts %>
+</body>
+
+
 
 <% include footer%>
 <style>
